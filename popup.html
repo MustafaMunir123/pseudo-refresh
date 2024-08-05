@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pseudo Refresh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px; /* Set the width of the popup */
+      box-sizing: border-box;
+    }
+    h2 {
+      color: #333;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    .input-group label {
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .toggle-btn {
+      background-color: #008CBA;
+    }
+    .toggle-btn:hover {
+      background-color: #007bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pseudo Refresh</h2>
+    <div class="input-group">
+      <label for="interval">Threshold</label>
+      <input type="number" id="interval" min="1" value="60" /> seconds
+    </div>
+    <div class="input-group">
+      <label for="min_sec">Min Seconds</label>
+      <input type="number" id="min_sec" min="1" value="20" /> seconds
+    </div>
+    <div class="input-group">
+      <label for="max_sec">Max Seconds</label>
+      <input type="number" id="max_sec" min="1" value="55" /> seconds
+    </div>
+    <button id="save">Save</button>
+    <br><br>
+    <button id="toggle" class="toggle-btn"></button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
