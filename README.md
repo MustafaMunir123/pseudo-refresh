@@ -1,4 +1,4 @@
-# Pseudo Refresh 
+# <img src="./images/icon.png" alt="Icon" style="width: 25px; vertical-align: middle;"/> Pseudo Refresh 
 ### Chrome Extension
 1. [Overview](#overview)
 2. [Features](#features)
