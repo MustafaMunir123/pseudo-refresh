@@ -29,7 +29,7 @@ Pseudo Refresh is a Chrome extension designed to automatically refresh the curre
 ### Functionality
 
 - **Randomized Refresh Interval**: The extension uses a combination of minimum and maximum seconds, along with milliseconds, to calculate a random interval for refreshing the tab.
-- **Toggle Activation**: Easily enable or disable the auto-refresh feature using the toggle button in the popup interface or use shorcut keys (CTRL+SHIFT+E)
+- **Toggle Activation**: Easily enable or disable the auto-refresh feature using the toggle button in the popup interface or use shortcut keys `CTRL+SHIFT+E`
 - **Persistent Settings**: All settings are stored locally in Chrome's storage, ensuring your preferences are retained across browser sessions.
 
 ## Setup
