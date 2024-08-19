@@ -1,6 +1,15 @@
 let refreshInterval;
 let isEnabled = false;
 
+chrome.commands.onCommand.addListener((command) => {
+  console.log(`Command: ${command}`);
+  if (command === "enable_or_disable") {
+    chrome.storage.local.get(['isEnabled'], (result) => {
+      chrome.storage.local.set({ isEnabled: !result.isEnabled });
+    });
+  }
+});
+
 function getRandomNumber(min, max) {
   if (min > max) {
     [min, max] = [max, min];
@@ -58,7 +67,7 @@ function startRefreshing() {
       chrome.tabs.reload(() => {
         startRefreshing();
       });
-    console.log(completeInterval)
+      console.log(completeInterval)
     }, completeInterval * 1000);
   });
 }
